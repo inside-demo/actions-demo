@@ -1,0 +1,24 @@
+{
+  "name": "actions-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inside-demo/actions-demo.git"
+  },
+  "keywords": [],
+  "author": "scrum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inside-demo/actions-demo/issues"
+  },
+  "homepage": "https://github.com/inside-demo/actions-demo#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2"
+  }
+}
