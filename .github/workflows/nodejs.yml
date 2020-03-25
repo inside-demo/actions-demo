@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Awesome readme to data
-        uses: Scrum/awesome-readme-to-data-action@0.0.0
+        uses: Scrum/awesome-readme-to-data-action@0.0.1
   build:
     runs-on: ubuntu-latest
     steps:
