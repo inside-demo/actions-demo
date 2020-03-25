@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Awesome readme to data
-        uses: Scrum/awesome-readme-to-data-action@v0.0.3
+        uses: Scrum/awesome-readme-to-data-action@v0.0.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build:
