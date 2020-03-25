@@ -7,12 +7,10 @@ on:
 
 jobs:
   data:
-    name: awesome readme to data
     runs-on: ubuntu-latest
     steps:
-      - uses: Scrum/awesome-readme-to-data-action@v0.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Awesome readme to data
+        uses: Scrum/awesome-readme-to-data-action@0.0.0
   build:
     runs-on: ubuntu-latest
     steps:
