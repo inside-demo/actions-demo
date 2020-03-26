@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Awesome readme to data
-        uses: Scrum/awesome-readme-to-data-action@v0.0.9
+        uses: Scrum/awesome-readme-to-data-action@v0.0.10
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
