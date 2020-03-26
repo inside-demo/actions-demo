@@ -2,7 +2,8 @@ name: Node CI
 
 on:
   pull_request:
-    paths: 'readme.md'
+    paths: 
+      - 'readme.md'
     types: [opened, synchronize]
     branches:
       - master
