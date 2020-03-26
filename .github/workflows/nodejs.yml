@@ -22,7 +22,7 @@ jobs:
           git add -A
           git commit -m "feat: update data file"
       - name: Push changes
-        run: echo ${{ github.event.pull_request.head.ref }}
+        run: git push origin HEAD:${{ github.event.pull_request.head.ref }}
   build:
     runs-on: ubuntu-latest
     steps:
