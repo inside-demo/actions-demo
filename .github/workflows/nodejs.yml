@@ -22,8 +22,7 @@ jobs:
           git add -A
           git commit -m "feat: update data file"
       - name: Push changes
-        run: |
-          echo "$GITHUB_CONTEXT"
+        run: echo "$GITHUB_CONTEXT"
   build:
     runs-on: ubuntu-latest
     steps:
