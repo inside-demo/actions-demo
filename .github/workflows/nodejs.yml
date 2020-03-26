@@ -21,8 +21,8 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git commit -m "feat: update data file"
-          git pull
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push
   build:
     runs-on: ubuntu-latest
     steps:
