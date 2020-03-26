@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
       - name: Awesome readme to data
         uses: Scrum/awesome-readme-to-data-action@v0.0.10
         env:
@@ -25,7 +23,7 @@ jobs:
           git commit -m "feat: update data file"
       - name: Push changes
         run: |
-          git push
+          echo "$GITHUB_CONTEXT"
   build:
     runs-on: ubuntu-latest
     steps:
