@@ -21,6 +21,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git commit -m "feat: update data file"
+          git pull
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
   build:
     runs-on: ubuntu-latest
