@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
       - name: Awesome readme to data
         uses: Scrum/awesome-readme-to-data-action@v0.0.10
         env:
