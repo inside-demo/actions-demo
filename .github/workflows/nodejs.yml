@@ -13,6 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Awesome readme to data
         uses: Scrum/awesome-readme-to-data-action@v0.0.10
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
